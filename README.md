@@ -26,5 +26,7 @@ register hook displayFooterBefore , registerGDPRConsent
 register hook actionFrontControllerSetMedia to include css file
 create a Table of Entity Doctrine Object
 create a Symfony Form
-create a Controller 
+create a Controller extends FrameworkBundleAdminController for new Paths
+create new Symfony routers 
+create a new factory greed extends AbstractGridDefinitionFactory
 ```
