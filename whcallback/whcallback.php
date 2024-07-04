@@ -101,6 +101,7 @@ class WHCallback extends Module
                 $lastname = Tools::getValue('whcblastname');
 
                 $entityManager = $this->get('doctrine.orm.entity_manager');
+
                 try{
                     $callbackRequest = new WHCallbackRequest();
                     $callbackRequest

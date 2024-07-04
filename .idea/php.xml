@@ -10,11 +10,28 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.1">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/ps_banner/vendor/composer" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/composer" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/giggsey/libphonenumber-for-php" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/prestashop/module-lib-service-container" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/giggsey/locale" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/prestashop/prestashop-accounts-installer" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/prestashop/module-lib-cache-directory-provider" />
+      <path value="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/symfony/polyfill-mbstring" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="5.4.0">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/autoload.php" />
+    </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
     <option name="transferred" value="true" />

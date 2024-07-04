@@ -1,0 +1,22 @@
+{
+  "name": "prestashop/demoextendsymfonyform2",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "Tadas Davidsonas",
+      "email": "tadas.davidsonas@invertus.eu"
+    },
+    {
+        "name": "PrestaShop Core Team"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\DemoExtendSymfonyForm\\": "src/"
+    },
+    "config": {
+      "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "prestashop/democontrollertabs",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "Jonathan Lelievre",
+      "email": "jonathan.lelievre@prestashop.com"
+    },
+    {
+        "name": "PrestaShop Core Team"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\DemoControllerTabs\\": "src/"
+    },
+    "config": {
+      "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  }
+}

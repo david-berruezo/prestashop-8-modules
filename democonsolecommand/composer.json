@@ -1,0 +1,22 @@
+{
+  "name": "prestashop/democonsolecommand",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "Julius Zukauskas",
+      "email": "julius.zukauskas@invertus.eu"
+    },
+    {
+      "name": "PrestaShop Core team"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\DemoConsoleCommand\\": "src/"
+    },
+    "config": {
+      "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  }
+}

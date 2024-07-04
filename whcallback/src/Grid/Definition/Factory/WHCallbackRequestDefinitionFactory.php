@@ -1,5 +1,4 @@
 <?php
-
 namespace WebHelpers\WHCallback\Grid\Definition\Factory;
 
 use PrestaShop\PrestaShop\Core\Grid\Action\Row\RowActionCollection;
