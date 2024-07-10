@@ -48,6 +48,7 @@ class democontrollertabs extends Module
         foreach (Language::getLanguages(true) as $lang) {
             $tabNames[$lang['locale']] = $this->trans('Demo Controller Tabs', [], 'Modules.Democontrollertabs.Admin', $lang['locale']);
         }
+
         $this->tabs = [
             [
                 'route_name' => 'ps_controller_tabs_configure',

@@ -3,13 +3,11 @@ admin_whcallbackrequest_list:
   methods: [GET]
   defaults:
     _controller: 'WebHelpers\WHCallback\Controller\AdminWHCallbackRequestController::listAction'
-
 admin_whcallbackrequest_search:
-  path: whcallback/list
-  methods: [POST]
-  defaults:
-    _controller: 'WebHelpers\WHCallback\Controller\AdminWHCallbackRequestController::searchAction'
-
+    path: whcallback/list
+    methods: [POST]
+    defaults:
+      _controller: 'WebHelpers\WHCallback\Controller\AdminWHCallbackRequestController::searchAction'
 admin_whcallbackrequest_delete:
   path: whcallback/delete/{idRequest}
   methods: [GET, POST]

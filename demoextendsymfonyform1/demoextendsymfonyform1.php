@@ -8,7 +8,6 @@
  * It is also available through the world-wide-web at this URL: https://opensource.org/licenses/AFL-3.0
  */
 
-
 use Doctrine\DBAL\Query\QueryBuilder;
 use PrestaShop\Module\DemoHowToExtendSymfonyForm\Entity\Reviewer;
 use PrestaShop\Module\DemoHowToExtendSymfonyForm\Exception\CannotCreateReviewerException;
@@ -65,6 +64,7 @@ class DemoExtendSymfonyForm1 extends Module
         return true;
     }
 
+
     /**
      * Install module and register hooks to allow grid modification.
      *
@@ -93,6 +93,7 @@ class DemoExtendSymfonyForm1 extends Module
             $this->registerHook('actionAfterUpdateCustomerFormHandler') &&
             $this->installTables();
     }
+
 
     public function uninstall()
     {
@@ -131,6 +132,7 @@ class DemoExtendSymfonyForm1 extends Module
                 ->setAssociatedColumn('is_allowed_for_review')
         );
     }
+
 
     /**
      * Hook allows to modify Customers query builder and add custom sql statements.
@@ -172,6 +174,7 @@ class DemoExtendSymfonyForm1 extends Module
         }
     }
 
+
     /**
      * Hook allows to modify Customers form and add additional form fields as well as modify or add new data to the forms.
      *
@@ -195,6 +198,8 @@ class DemoExtendSymfonyForm1 extends Module
 
         $formBuilder->setData($params['data']);
     }
+
+
 
     /**
      * Hook allows to modify Customers form and add additional form fields as well as modify or add new data to the forms.

@@ -54,6 +54,9 @@ services:
     class: PrestaShop\Module\DemoSymfonyForm\Form\DemoConfigurationChoiceDataConfiguration
     arguments: [ '@prestashop.adapter.legacy.configuration' ]
 
+
+
+
   # Demo configuration other form
   prestashop.module.demosymfonyform.form.type.demo_configuration_other:
     class: 'PrestaShop\Module\DemoSymfonyForm\Form\DemoConfigurationOtherType'

@@ -1,4 +1,5 @@
 <?php
+
 if (!defined('_PS_VERSION_')) {
     exit;
 }
@@ -51,7 +52,7 @@ class WHReinsurance extends Module
     {
         $this->context->controller->registerStylesheet(
             'whreinsurance-style',
-            $this->_path . 'views/css/whreinsurance.css',
+            $this->_path.'views/css/whreinsurance.css',
             [
                 'media' => 'all',
                 'priority' => 999,

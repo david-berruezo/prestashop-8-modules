@@ -13,6 +13,7 @@ declare(strict_types=1);
 use PrestaShop\Module\DemoExtendSymfonyForm\Entity\SupplierExtraImage;
 use PrestaShop\Module\DemoExtendSymfonyForm\Install\Installer;
 use PrestaShop\Module\DemoExtendSymfonyForm\Repository\SupplierExtraImageRepository;
+
 use PrestaShop\PrestaShop\Core\Image\Uploader\ImageUploaderInterface;
 use PrestaShopBundle\Form\Admin\Type\CustomContentType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
@@ -68,6 +69,7 @@ class DemoExtendSymfonyForm2 extends Module
 
         return $installer->uninstall() && parent::uninstall();
     }
+
 
     /**
      * @param array $params

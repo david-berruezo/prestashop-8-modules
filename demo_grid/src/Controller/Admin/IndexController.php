@@ -32,6 +32,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class IndexController extends FrameworkBundleAdminController
 {
+
     /**
      * List quotes
      *
@@ -54,6 +55,7 @@ class IndexController extends FrameworkBundleAdminController
         );
     }
 
+
     /**
      * Provides filters functionality.
      *
@@ -73,4 +75,5 @@ class IndexController extends FrameworkBundleAdminController
             'demo_grid_index'
         );
     }
+
 }

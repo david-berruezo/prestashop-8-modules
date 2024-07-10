@@ -32,6 +32,7 @@ class DemoConfigurationMultipleFormsController extends FrameworkBundleAdminContr
     {
         $choiceFormDataHandler = $this->get('prestashop.module.demosymfonyform.form.demo_configuration_choice_form_data_handler');
         $choiceForm = $choiceFormDataHandler->getForm();
+
         $otherFormDataHandler = $this->get('prestashop.module.demosymfonyform.form.demo_configuration_other_form_data_handler');
         $otherForm = $otherFormDataHandler->getForm();
 

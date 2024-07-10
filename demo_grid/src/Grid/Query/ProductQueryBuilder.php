@@ -24,6 +24,7 @@ namespace Module\DemoGrid\Grid\Query;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Query\QueryBuilder;
+
 use PrestaShop\PrestaShop\Adapter\Configuration;
 use PrestaShop\PrestaShop\Core\Grid\Query\AbstractDoctrineQueryBuilder;
 use PrestaShop\PrestaShop\Core\Grid\Query\DoctrineSearchCriteriaApplicatorInterface;
@@ -91,6 +92,22 @@ class ProductQueryBuilder extends AbstractDoctrineQueryBuilder
         $this->filterApplicator = $filterApplicator;
         $this->configuration = $configuration;
     }
+
+    /*
+demo_grid.grid.query_builder.product:
+class: 'Module\DemoGrid\Grid\Query\ProductQueryBuilder'
+parent: 'prestashop.core.grid.abstract_query_builder'
+public: true
+arguments:
+- '@prestashop.core.query.doctrine_search_criteria_applicator'
+- "@=service('prestashop.adapter.legacy.context').getContext().language.id"
+- "@=service('prestashop.adapter.legacy.context').getContext().shop.id"
+- "@=service('prestashop.adapter.legacy.context').getContext().shop.id_shop_group"
+- "@=service('prestashop.adapter.legacy.context').getContext().shop.getGroup().share_stock"
+- '@prestashop.core.grid.query.filter.doctrine_filter_applicator'
+- '@prestashop.adapter.legacy.configuration'
+    */
+
 
     /**
      * {@inheritdoc}

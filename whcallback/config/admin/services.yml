@@ -87,10 +87,10 @@ services:
   webhelpers.whcallback.grid.whcallbackrequest_grid_factory:
     class: 'PrestaShop\PrestaShop\Core\Grid\GridFactory'
     arguments:
-      - '@webhelpers.whcallback.grid.definition.factory.whcallbackrequest_grid_definition_factory'
-      - '@webhelpers.whcallback.grid.data.factory.whcallbackrequest_data_factory'
-      - '@prestashop.core.grid.filter.form_factory'
-      - '@prestashop.core.hook.dispatcher'
+        - '@webhelpers.whcallback.grid.definition.factory.whcallbackrequest_grid_definition_factory'
+        - '@webhelpers.whcallback.grid.data.factory.whcallbackrequest_data_factory'
+        - '@prestashop.core.grid.filter.form_factory'
+        - '@prestashop.core.hook.dispatcher'
 
   #CONTROLLERS
   WebHelpers\WHCallback\Controller\AdminWHCallbackRequestController:

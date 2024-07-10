@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/classes" isTestSource="false" packagePrefix="KlaviyoPs\Classes\" />
       <sourceFolder url="file://$MODULE_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/klaviyo-v3-sdk" isTestSource="false" packagePrefix="KlaviyoV3Sdk\" />
       <sourceFolder url="file://$MODULE_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/whcallback/src" isTestSource="false" packagePrefix="WebHelpers\WHCallback\" />
       <excludeFolder url="file://$MODULE_DIR$/ps_banner/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/v1.6.0-klaviyopsautomation/klaviyopsautomation/vendor/giggsey/libphonenumber-for-php" />

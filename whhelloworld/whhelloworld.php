@@ -12,9 +12,9 @@ class WHHelloWorld extends Module
         $this->name = 'whhelloworld';
         $this->tab = 'front_office_features';
         $this->version = '1.0.0';
-        $this->author = 'David Berruezo';
+        $this->author = 'Web Helpers';
 
-        # Optional non-localized attributes
+        //Optional non-localized attributes
         $this->need_instance = 0;
         $this->ps_versions_compliancy = [
             'min' => '1.7.0',
@@ -24,7 +24,7 @@ class WHHelloWorld extends Module
 
         parent::__construct();
 
-        # Optional localizable attributes
+        //Optional localizable attributes
         $this->confirmUninstall = $this->l('Do you still you want to uninstall the Hello World module?');
         $this->description = $this->l('This is a simple hello world module.');
         $this->displayName = $this->l('Hello World');

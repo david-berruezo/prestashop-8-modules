@@ -19,6 +19,7 @@ use PrestaShop\PrestaShop\Core\Domain\Supplier\Exception\SupplierException;
 use PrestaShopBundle\Controller\Admin\FrameworkBundleAdminController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
+
 /**
  * Class DemoSupplierController
  * @package PrestaShop\Module\DemoExtendSymfonyForm\Controller
@@ -51,6 +52,7 @@ class DemoSupplierController extends FrameworkBundleAdminController
         ]);
     }
 
+
     /**
      * Provides error messages for exceptions
      * @return array
@@ -64,6 +66,7 @@ class DemoSupplierController extends FrameworkBundleAdminController
             ),
         ];
     }
+
 
     /**
      * @param int $supplierId

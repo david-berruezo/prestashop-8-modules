@@ -25,6 +25,7 @@
 } %}
 
 {% extends '@PrestaShop/Admin/layout.html.twig' %}
+
 {% form_theme demoConfigurationChoiceForm '@PrestaShop/Admin/TwigTemplateForm/prestashop_ui_kit.html.twig' %}
 {% form_theme demoConfigurationOtherForm '@PrestaShop/Admin/TwigTemplateForm/prestashop_ui_kit.html.twig' %}
 
@@ -69,6 +70,7 @@
     </div>
   </div>
   {{ form_end(demoConfigurationOtherForm) }}
+
 {% endblock %}
 
 {% block javascripts %}

@@ -14,12 +14,14 @@ namespace PrestaShop\Module\DemoExtendSymfonyForm\Uploader;
 
 use PrestaShop\Module\DemoExtendSymfonyForm\Entity\SupplierExtraImage;
 use PrestaShop\Module\DemoExtendSymfonyForm\Repository\SupplierExtraImageRepository;
+
 use PrestaShop\PrestaShop\Core\Image\Uploader\Exception\ImageOptimizationException;
 use PrestaShop\PrestaShop\Core\Image\Uploader\Exception\ImageUploadException;
 use PrestaShop\PrestaShop\Core\Image\Uploader\Exception\MemoryLimitException;
 use PrestaShop\PrestaShop\Core\Image\Uploader\Exception\UploadedImageConstraintException;
 use PrestaShop\PrestaShop\Core\Image\Uploader\ImageUploaderInterface;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+
 
 /**
  * Class SupplierExtraImageUploader
@@ -38,6 +40,7 @@ class SupplierExtraImageUploader implements ImageUploaderInterface
         $this->supplierExtraImageRepository = $supplierExtraImageRepository;
     }
 
+
     /**
      * @param int $supplierId
      * @param UploadedFile $image
@@ -53,6 +56,7 @@ class SupplierExtraImageUploader implements ImageUploaderInterface
         $this->uploadFromTemp($tempImageName, $destination);
         $this->supplierExtraImageRepository->upsertSupplierImageName($supplierId, $originalImageName);
     }
+
 
     /**
      * Creates temporary image from uploaded file
@@ -73,6 +77,7 @@ class SupplierExtraImageUploader implements ImageUploaderInterface
 
         return $temporaryImageName;
     }
+
 
     /**
      * Uploads resized image from temporary folder to image destination
@@ -109,6 +114,7 @@ class SupplierExtraImageUploader implements ImageUploaderInterface
             unlink(_PS_SUPP_IMG_DIR_ . $supplierExtraImage->getImageName());
         }
     }
+
 
     /**
      * Check if image is allowed to be uploaded.

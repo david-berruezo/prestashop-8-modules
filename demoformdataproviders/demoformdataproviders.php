@@ -69,6 +69,7 @@ class DemoFormDataProviders extends Module
         $params["data"]["details"]["references"]["mpn"] = $newMpnPrefix;
     }
 
+
     public function hookActionProductFormDataProviderData(array $params): void
     {
         // add a prefix for field "details > references > mpn" if not prefixed
@@ -79,6 +80,7 @@ class DemoFormDataProviders extends Module
             $params["data"]["details"]["references"]["mpn"] = $newMpnPrefix . $actualMpn;
         }
     }
+
 
     public function getNewMpnPrefix(): string
     {

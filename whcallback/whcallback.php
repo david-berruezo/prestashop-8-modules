@@ -1,5 +1,4 @@
 <?php
-
 if (!defined('_PS_VERSION_')) {
     exit;
 }
@@ -32,7 +31,7 @@ class WHCallback extends Module
         $this->name = 'whcallback';
         $this->tab = 'front_office_features';
         $this->version = '1.0.0';
-        $this->author = 'David Berruezo';
+        $this->author = 'Web Helpers';
 
         //Optional non-localized attributes
         $this->need_instance = 0;
@@ -101,7 +100,6 @@ class WHCallback extends Module
                 $lastname = Tools::getValue('whcblastname');
 
                 $entityManager = $this->get('doctrine.orm.entity_manager');
-
                 try{
                     $callbackRequest = new WHCallbackRequest();
                     $callbackRequest

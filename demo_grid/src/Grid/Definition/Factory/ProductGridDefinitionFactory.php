@@ -98,6 +98,8 @@ class ProductGridDefinitionFactory extends AbstractGridDefinitionFactory
             );
     }
 
+
+
     /**
      * {@inheritdoc}
      */
