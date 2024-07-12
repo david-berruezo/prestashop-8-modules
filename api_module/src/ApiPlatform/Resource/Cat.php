@@ -40,6 +40,7 @@ use ApiPlatform\Metadata\Get;
         ),
     ]
 )]
+
 class Cat
 {
     /**

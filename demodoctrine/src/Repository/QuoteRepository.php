@@ -59,6 +59,7 @@ class QuoteRepository extends EntityRepository
         return $quotes;
     }
 
+
     public function getAllIds()
     {
         /** @var QueryBuilder $qb */
